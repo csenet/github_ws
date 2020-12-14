@@ -50,3 +50,11 @@ h1 {
     /*影を小さく*/
     border-bottom: none;
 }
+
+body {
+    background-color: #e9f4ff;
+}
+
+#total {
+    text-align: center;
+}

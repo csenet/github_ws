@@ -16,10 +16,21 @@
   <div id="ok">GitHub完全に理解した</div>
 
   <div style="padding: 10px 20px 30px 40px;">
-    <a href="#" class="btn-square-shadow">BUTTON</a>
+    <a href="#" class="btn-square-shadow" id="button">500兆円ほしい</a>
   </div>
+  <h1 id="total">0兆円</h1>
 
   <script src="./src/index.js"></script>
+  <script>
+    let money = 0;
+    const buttonElement = document.getElementById('button');
+    const label = document.getElementById('total');
+    buttonElement.addEventListener('click', (event) => {
+      money += 5000;
+      label.innerText = money + "兆円";
+    });
+  </script>
+
 </body>
 
 </html>
